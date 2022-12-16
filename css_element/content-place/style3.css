@@ -1,0 +1,147 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.lights{
+    position: relative;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 5%;
+}
+
+/*Ampoule 1*/
+
+.light1 .bulb{
+    left: 40%;
+    top: 100px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: #444;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+
+.light1 .bulb::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 22.5px;
+    width: 35px;
+    height: 80px;
+    background-color: #444;
+    border-top: 30px solid black;
+    border-radius: 10px;
+}
+
+.light1 .bulb::after{
+    content: '';
+    position: absolute;
+    top: -120px;
+    background-color: black;
+    width: 6%;
+    height: 9vh;
+    z-index: -1;
+}
+
+.light1 .bulb span:nth-child(1){
+    position: absolute;
+    display: block;
+    top: -16px;
+    left: -4px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    transform: rotate(342deg);
+    border-bottom-right-radius: 40px;
+    box-shadow: 20px 20px 0 10px #444;
+}
+
+.light1 .bulb span:nth-child(2){
+    position: absolute;
+    display: block;
+    top: -16px;
+    right: -4px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    transform: rotate(17deg);
+    border-bottom-left-radius: 40px;
+    box-shadow: -20px 20px 0 10px #444;
+}
+
+/*Ampoule 2*/
+.light2 .bulb{
+    left: 55%;
+    top: 100px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: #444;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+
+.light2 .bulb::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 22.5px;
+    width: 35px;
+    height: 80px;
+    background-color: #444;
+    border-top: 30px solid black;
+    border-radius: 10px;
+}
+
+.light2 .bulb::after{
+    content: '';
+    position: absolute;
+    top: -190px;
+    background-color: black;
+    width: 6%;
+    height: 19vh;
+    z-index: -1;
+}
+
+.light2 .bulb span:nth-child(1){
+    position: absolute;
+    display: block;
+    top: -16px;
+    left: -4px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    transform: rotate(342deg);
+    border-bottom-right-radius: 40px;
+    box-shadow: 20px 20px 0 10px #444;
+}
+
+.light2 .bulb span:nth-child(2){
+    position: absolute;
+    display: block;
+    top: -16px;
+    right: -4px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    transform: rotate(17deg);
+    border-bottom-left-radius: 40px;
+    box-shadow: -20px 20px 0 10px #444;
+}
+
+.light1 .bulb:hover{
+    transform: rotate(-15deg);
+}
+
+.light2 .bulb:hover{
+    transform: rotate(15deg);
+}

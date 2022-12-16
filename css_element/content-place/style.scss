@@ -1,0 +1,199 @@
+body{
+    display: grid;
+    justify-items: center;
+    margin: 0;
+    background-color: darkcyan;
+}
+
+.test{
+    margin-top: -60px;
+}
+
+/*
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.lights{
+    position: relative;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 5%;
+}
+
+
+.light1 .bulb{
+    left: 40%;
+    top: 100px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: palegoldenrod;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+
+.light1 .bulb::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 22.5px;
+    width: 35px;
+    height: 80px;
+    background-color: palegoldenrod;
+    border-top: 30px solid black;
+    border-radius: 10px;
+}
+
+.light1 .bulb::after{
+    content: '';
+    position: absolute;
+    top: -120px;
+    background-color: black;
+    width: 6%;
+    height: 9vh;
+    z-index: -1;
+}
+
+.light1 .bulb span:nth-child(1){
+    position: absolute;
+    display: block;
+    top: -16px;
+    left: -4px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    transform: rotate(342deg);
+    border-bottom-right-radius: 40px;
+    box-shadow: 20px 20px 0 10px palegoldenrod;
+}
+
+.light1 .bulb span:nth-child(2){
+    position: absolute;
+    display: block;
+    top: -16px;
+    right: -4px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    transform: rotate(17deg);
+    border-bottom-left-radius: 40px;
+    box-shadow: -20px 20px 0 10px palegoldenrod;
+}
+
+.light2 .bulb{
+    left: 55%;
+    top: 100px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: palegoldenrod;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+
+.light2 .bulb::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 22.5px;
+    width: 35px;
+    height: 80px;
+    background-color: palegoldenrod;
+    border-top: 30px solid black;
+    border-radius: 10px;
+}
+
+.light2 .bulb::after{
+    content: '';
+    position: absolute;
+    top: -190px;
+    background-color: black;
+    width: 6%;
+    height: 19vh;
+    z-index: -1;
+}
+
+.light2 .bulb span:nth-child(1){
+    position: absolute;
+    display: block;
+    top: -16px;
+    left: -4px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    transform: rotate(342deg);
+    border-bottom-right-radius: 40px;
+    box-shadow: 20px 20px 0 10px palegoldenrod;
+}
+
+.light2 .bulb span:nth-child(2){
+    position: absolute;
+    display: block;
+    top: -16px;
+    right: -4px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    transform: rotate(17deg);
+    border-bottom-left-radius: 40px;
+    box-shadow: -20px 20px 0 10px palegoldenrod;
+}
+
+
+
+.lights:hover{
+    .light1 .bulb{
+        animation: bulb 5s;
+        @keyframes bulb {
+            0%{
+                transform: rotate(-15deg);
+            }
+            50%{
+                transform: rotate(0deg);
+            }
+        }
+    }
+    
+    .light2 .bulb{
+        animation: bulb2 5s;
+        @keyframes bulb2 {
+            0%{
+                transform: rotate(15deg);
+            }
+            50%{
+                transform: rotate(0deg);
+            }
+        }
+    }
+}
+*/
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background-color: palegoldenrod;
+    padding: 4%;
+    margin-top: 100px;
+}
+
+section::before{
+    content: '';
+    background-color: palegoldenrod;
+    width: 60%;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: -150px;
+    z-index: -10;
+}
+
+ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+}
+
